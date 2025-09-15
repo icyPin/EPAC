@@ -11,7 +11,6 @@ const EventCard = ({ event }) => {
             <div className="p-6">
                 <h4 className="text-xl font-semibold mb-2 text-dark-text">{event.title}</h4>
                 <p className="text-dark-text-on-light text-sm mb-3">{event.description}</p>
-                <a href={event.link} className="text-primary-accent hover:text-secondary-accent font-medium text-sm">Learn More &rarr;</a>
             </div>
         </div>
     );

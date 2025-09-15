@@ -1,7 +1,15 @@
 import React from 'react';
 import EventCard from './cards/EventCard.jsx';
+import { useNavigate } from "react-router-dom";
+
 
 const Events = () => {
+
+    const navigate = useNavigate(); 
+    const handleClick=()=>{
+        navigate('/events');
+    }
+
     return (
             <section id="events" className="py-16 md:py-24 bg-secondary-bg">
                 <div className="container mx-auto px-6">
@@ -29,7 +37,7 @@ const Events = () => {
                             }} />
                         </div>
                         <div className="more text text-center pt-10">
-                            <a href="" className="text-primary-accent hover:text-secondary-accent font-medium text-sm text-center">View more..</a>
+                            <a href="" className="text-primary-accent hover:text-secondary-accent font-medium text-sm text-center" onClick={handleClick}>View more..</a>
                         </div>
                         <h3 className="text-2xl font-semibold mt-16 mb-6 text-primary-accent text-center">Upcoming Events</h3>
                         <div className="text-center text-dark-text-on-light">
@@ -37,7 +45,7 @@ const Events = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
     );
 };
 

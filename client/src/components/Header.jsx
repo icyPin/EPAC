@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import HeaderCard from './cards/HeaderCard';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,6 +27,8 @@ const Header = () => {
         };
     }, []);
 
+    const navigate = useNavigate();
+    
     return (
         <header id="header" className={`bg-header-bg/80 backdrop-blur-md shadow-lg fixed w-full z-50 top-0 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
@@ -38,7 +41,7 @@ const Header = () => {
                     <HeaderCard event={{ title: "About Us" }} />
                     <HeaderCard event={{ title: "Events" }} />
                     <HeaderCard event={{ title: "Team" }} />
-                    <HeaderCard event={{ title: "Gallery" }} />
+                    <HeaderCard event={{ title: "Gallery" }} /> 
                     <HeaderCard event={{ title: "Contact Us" }} />
                 </nav>
                 <button id="mobileMenuButton" className="md:hidden text-light-text-on-dark focus:outline-none" onClick={toggleMenu}>
