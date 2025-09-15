@@ -1,0 +1,167 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section Background */
+.hero-bg {
+    background: linear-gradient(rgba(66, 66, 66, 0.8), rgba(66, 66, 66, 0.8)), url('https://placehold.co/1920x1080/D1D1C2/424242?text=Abstract+Background');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation link styles */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Card styles */
+.card {
+    border-radius: 0.75rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures content like images respect border radius */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(76, 175, 80, 0.3), 0 4px 6px -2px rgba(76, 175, 80, 0.2);
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.section-title span { /* For the underline effect */
+    padding-bottom: 0.25rem; 
+}
+
+/* Primary button styles (Call to Action) */
+.btn-primary {
+    color: #F8F8F8; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 1rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.btn-primary:hover {
+    background-color: #08ec54; /* Darker Sky Blue */
+    transform: scale(1.05);
+}
+
+/* Secondary button styles (example, not used extensively in current HTML but good to have) */
+.btn-secondary {
+    border: 2px ;
+    padding: 0.75rem 1.5rem; /* Tailwind py-3 px-6 */
+    border-radius: 0.5rem; /* Tailwind rounded-lg */
+    font-weight: 600; /* Tailwind font-semibold */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.btn-secondary:hover {
+    background-color: var(--color-primary-accent); /* Primary Accent: Vibrant Green */
+    color: #F8F8F8; /* Off-White for text on button */
+    transform: scale(1.05);
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Primary Accent: Vibrant Green */
+    color: #F8F8F8; /* Off-White for icon */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+#scrollTopBtn:hover {
+    background-color: #8BC34A; /* Secondary Accent: Light Green/Lime */
+}
+
+/* Animation for sections fading in on scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero text animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out 0.2s forwards; /* Added a slight delay */
+    opacity: 0; /* Start as hidden before animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0; /* Start as hidden before animation */
+}
+
+/* Animation delay utility classes */
+.animation-delay-300 {
+    animation-delay: 0.5s; /* Increased from 0.3s for better sequencing */
+}
+.animation-delay-600 {
+    animation-delay: 0.8s; /* Increased from 0.6s */
+}
+
+/* Ensure images inside cards don't overflow */
+.card img {
+    display: block; /* Removes extra space below image if it's inline */
+}
+
+.event_page{
+    height: auto;
+    width: auto;
+    background-color: aqua;
+
+}
