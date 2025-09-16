@@ -4,7 +4,7 @@ import EventCard from '../components/cards/EventCard.jsx';
 const events=()=>{
     return(
     <div className="mt-12 event_page ">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 row">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 row px-10">
             <EventCard event={{
                 title: "Eco Awareness Workshop",
                 description: "A workshop to raise awareness about environmental issues and sustainable practices.",
@@ -22,7 +22,7 @@ const events=()=>{
             }} />              
         </div>
         <br /><br />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 row">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 row px-10">
             <EventCard event={{
                 title: "Eco Awareness Workshop",
                 description: "A workshop to raise awareness about environmental issues and sustainable practices.",
@@ -42,5 +42,5 @@ const events=()=>{
     </div>
     );
 }
-
-export default events;
+ 
+export default events;    

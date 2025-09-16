@@ -16,3 +16,4 @@ const EventCard = ({ event }) => {
     );
 };
 export default EventCard;
+
