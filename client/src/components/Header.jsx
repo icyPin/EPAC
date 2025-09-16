@@ -41,7 +41,7 @@ const Header = () => {
                     <HeaderCard event={{ title: "About Us" }} />
                     <HeaderCard event={{ title: "Events" }} />
                     <HeaderCard event={{ title: "Team" }} />
-                    <HeaderCard event={{ title: "Gallery" }} /> 
+                    <HeaderCard event={{ title: "Gallery" }} />  
                     <HeaderCard event={{ title: "Contact Us" }} />
                 </nav>
                 <button id="mobileMenuButton" className="md:hidden text-light-text-on-dark focus:outline-none" onClick={toggleMenu}>
@@ -61,5 +61,6 @@ const Header = () => {
         </header>
     );
 };
-
+ 
 export default Header;
+
