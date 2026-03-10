@@ -37,12 +37,11 @@ const Header = () => {
                     <span className="text-light-text-on-dark">BIT Mesra</span>
                 </a>
                 <nav className="hidden md:flex space-x-8 items-center">
-                    <HeaderCard event={{ title: "Home" }} />
-                    <HeaderCard event={{ title: "About Us" }} />
-                    <HeaderCard event={{ title: "Events" }} />
-                    <HeaderCard event={{ title: "Team" }} />
-                    <HeaderCard event={{ title: "Gallery" }} />  
-                    <HeaderCard event={{ title: "Contact Us" }} />
+                    <HeaderCard event={{ title: "Home", link: "#hero" }} />
+                    <HeaderCard event={{ title: "About Us", link: "#about" }} />
+                    <HeaderCard event={{ title: "Events", link: "#events" }} />
+                    <HeaderCard event={{ title: "Team", link: "#team" }} />
+                    <HeaderCard event={{ title: "Contact Us", link: "#contact" }} />
                 </nav>
                 <button id="mobileMenuButton" className="md:hidden text-light-text-on-dark focus:outline-none" onClick={toggleMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7">
@@ -51,12 +50,11 @@ const Header = () => {
                 </button>
             </div>
             <div id="mobileMenu" className={`md:hidden ${isMenuOpen ? '' : 'hidden'} bg-header-bg/90 backdrop-blur-sm`}>
-                <HeaderCard event={{ title: "Home" }} />
-                    <HeaderCard event={{ title: "About Us" }} />
-                    <HeaderCard event={{ title: "Events" }} />
-                    <HeaderCard event={{ title: "Team" }} />
-                    <HeaderCard event={{ title: "Gallery" }} />
-                    <HeaderCard event={{ title: "Contact Us" }} />
+                <HeaderCard event={{ title: "Home", link: "#hero" }} />
+                <HeaderCard event={{ title: "About Us", link: "#about" }} />
+                <HeaderCard event={{ title: "Events", link: "#events" }} />
+                <HeaderCard event={{ title: "Team", link: "#team" }} />
+                <HeaderCard event={{ title: "Contact Us", link: "#contact" }} />
             </div>
         </header>
     );
