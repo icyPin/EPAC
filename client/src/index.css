@@ -4,7 +4,7 @@ body {
 
 /* Hero Section Background */
 .hero-bg {
-    background: linear-gradient(rgba(66, 66, 66, 0.8), rgba(66, 66, 66, 0.8)), url('https://placehold.co/1920x1080/D1D1C2/424242?text=Abstract+Background');
+    background: linear-gradient(rgba(66, 66, 66, 0.8), rgba(66, 66, 66, 0.8)), url('') no-repeat center center;
     background-size: cover;
     background-position: center;
 }

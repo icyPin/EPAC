@@ -20,7 +20,7 @@ const Events = () => {
                             <EventCard event={{
                                 title: "Eco Awareness Workshop",
                                 description: "A workshop to raise awareness about environmental issues and sustainable practices.",
-                                image: "https://placehold.co/600x400/card-bg/dark-text?text=Eco+Awareness+Workshop",
+                                image: "/img/hero.jpg",
                                 link: "#"
                             }} />
                             <EventCard event={{

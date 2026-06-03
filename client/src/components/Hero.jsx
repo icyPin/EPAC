@@ -3,7 +3,8 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section id="hero" className="hero-bg min-h-screen flex items-center justify-center pt-20 md:pt-0">
+        <section id="hero" className="hero-bg min-h-screen flex items-center justify-center pt-20 md:pt-0" 
+        style={{ backgroundImage: "url('/img/hero.jpg')" }}>
             <div className="text-center p-6">
                 <h1 className="text-5xl md:text-7xl font-extrabold text-hero-text mb-6 animate-fade-in-down">
                     Environment Protection and Awareness Club
