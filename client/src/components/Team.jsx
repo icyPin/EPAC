@@ -18,10 +18,10 @@ const Team = () => {
 
                         <h3 className="text-2xl font-semibold mb-8 text-primary-accent text-center">Core Team</h3>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                            <TeamCard member={{ name: "Placeholder Name", role: "President" , image: "https://placehold.co/200x200/card-bg/dark-text?text=President" }} />
-                            <TeamCard member={{ name: "Another Name", role: "Vice President", image: "https://placehold.co/200x200/card-bg/dark-text?text=Vice%20President" }} />
-                            <TeamCard member={{ name: "Secretary Name", role: "Secretary", image: "https://placehold.co/200x200/card-bg/dark-text?text=Secretary" }} />
-                            <TeamCard member={{ name: "Treasurer Name", role: "Treasurer", image: "https://placehold.co/200x200/card-bg/dark-text?text=Treasurer" }} />
+                            <TeamCard member={{ name: "D.MD Abdul Hameed", role: "President" , image: "https://placehold.co/200x200/card-bg/dark-text?text=President" }} />
+                            <TeamCard member={{ name: "Tarun Pratap Singh", role: "Vice President", image: "https://placehold.co/200x200/card-bg/dark-text?text=Vice%20President" }} />
+                            <TeamCard member={{ name: "Affan Raza", role: "Vice President", image: "https://placehold.co/200x200/card-bg/dark-text?text=Secretary" }} />
+                            <TeamCard member={{ name: "Tanish Kurakula", role: "Joint President", image: "https://placehold.co/200x200/card-bg/dark-text?text=Treasurer" }} />
                         </div>
                     </div>
                 </div>
