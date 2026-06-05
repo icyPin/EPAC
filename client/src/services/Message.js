@@ -1,6 +1,6 @@
 async function Message(name, email, message) {
     try {
-        const response = await fetch('/api/messages', {
+        const response = await fetch('http://localhost:3001/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

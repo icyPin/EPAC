@@ -1,13 +1,16 @@
 import React from 'react';
 
-const EventCard = ({ event }) => {
+// Added onClick to the props
+const EventCard = ({ event, onClick }) => {
     return (
-        <div className="card">
+        // Added cursor-pointer so the user knows it's clickable, and the onClick handler
+        <div className="card cursor-pointer hover:opacity-90 transition-opacity" onClick={onClick}>
             <img 
                 src={event.image || "https://placehold.co/600x400/card-bg/dark-text?text=Event+Image"} 
                 alt={event.title} 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover rounded-lg shadow-md" 
             />
+            {/* Keeping this commented out as per your code, but you can uncomment later! */}
             {/* <div className="p-6">
                 <h4 className="text-xl font-semibold mb-2 text-dark-text">{event.title}</h4>
                 <p className="text-dark-text-on-light text-sm mb-3">{event.description}</p>
@@ -15,5 +18,5 @@ const EventCard = ({ event }) => {
         </div>
     );
 };
-export default EventCard;
 
+export default EventCard;
