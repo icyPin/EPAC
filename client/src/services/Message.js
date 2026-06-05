@@ -1,6 +1,6 @@
 async function Message(name, email, message) {
     try {
-        const response = await fetch('http://localhost:3001/api/contact', {
+        const response = await fetch('https://epac.onrender.com/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
