@@ -8,14 +8,12 @@ const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const HandleMessage = async (e) => {
-        e.preventDefault(); // Prevents page reload
+        e.preventDefault(); 
         setIsSubmitting(true);
         
         try {
-            // Pass the state directly. No e.target needed!
             await Message(name, email, message);
-            
-            // Clear the form fields after a successful send
+        
             setName('');
             setEmail('');
             setMessage('');
@@ -33,11 +31,11 @@ const Contact = () => {
                 <h2 className="section-title text-dark-text"><span>Contact Us</span></h2>
                 <div className="grid md:grid-cols-2 gap-12 mt-12 items-start">
                     
-                    {/* Form Section */}
+                    
                     <div className="bg-card-bg p-8 rounded-lg shadow-xl">
                         <h3 className="text-2xl font-semibold mb-6 text-dark-text">Get in Touch</h3>
                         
-                        {/* Notice the onSubmit is placed here on the form */}
+                       
                         <form onSubmit={HandleMessage}>
                             <div className="mb-5">
                                 <label htmlFor="name" className="block mb-2 text-sm font-medium text-dark-text-on-light">Full Name</label>
@@ -79,7 +77,6 @@ const Contact = () => {
                                 ></textarea>
                             </div>
                             
-                            {/* The submit button triggers the form's onSubmit automatically */}
                             <button 
                                 type="submit" 
                                 className="btn-primary w-full"
@@ -90,7 +87,7 @@ const Contact = () => {
                         </form>
                     </div>
                     
-                    {/* Club Information Section */}
+                
                     <div className="space-y-6 text-dark-text-on-light">
                         <h3 className="text-2xl font-semibold text-dark-text">Club Information</h3>
                         
