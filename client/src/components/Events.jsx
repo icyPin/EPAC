@@ -6,10 +6,10 @@ const Events = () => {
     const navigate = useNavigate(); 
     const [selectedEvent, setSelectedEvent] = useState(null);
 
-    const handleClick = (e) => {
-        e.preventDefault(); 
-        navigate('/events');
-    }
+    // const handleClick = (e) => {
+    //     e.preventDefault(); 
+    //     navigate('/events');
+    // }
 
     const upcomingEvents = [
         {
@@ -75,7 +75,7 @@ const Events = () => {
                     </div>
                     
                     <div className="more text text-center pt-10">
-                        <a href="/events" className="text-primary-accent hover:text-secondary-accent font-medium text-sm text-center" onClick={handleClick}>View more..</a>
+                        <a href="" className="text-primary-accent hover:text-secondary-accent font-medium text-sm text-center" onClick={handleClick}>View more..</a>
                     </div>
                     
                     <h3 className="text-2xl font-semibold mt-16 mb-6 text-primary-accent text-center">Upcoming Events</h3>
